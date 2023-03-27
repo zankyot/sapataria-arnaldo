@@ -1,32 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 body{
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 header{
-    background-color: rgb(78, 32, 1);
-    overflow: hidden;
-    position:relative;
-    width: 100%;
-    height: 85px;
+  background-color: rgb(78, 32, 1);
+  overflow: hidden;
 }
 header .logo{
-    float: left;
-    display: block;
-    padding: 0px 15px;
+  float: left;
+  padding: 0px 15px;
 }
 header a{
-    color: rgb(255, 255, 255);
-    float: right;
-    text-decoration: none;
-    display: block;
-    font-size: 19px;
-    padding: 35px 30px;
-    
+  color: rgb(255, 255, 255);
+  float: right;
+  text-decoration: none;
+  font-size: 19px;
+  padding: 35px 30px;
 }
 header a:hover{
-    transition: 0.5s;
-    background-color: rgb(0, 0, 0);
+  transition: 0.5s;
+  background-color: rgb(0, 0, 0);
+}
+
+
+.slider{
+  margin:0px auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+.slides{
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+.slides input{
+  display: none;  
+}
+.slide{
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+.slide img{
+  width: 800px;  
+}
+.manual-navegation{
+  position: absolute;
+  width: 800px;
+  margin-top: -30px;
+  display:flex;
+  justify-content: center;
+}
+.manual-btn{
+  border: 2px solid #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 50px;
+}
+.manual-btn:hover{
+  background-color: rgb(255, 255, 255);
+}
+#radio1:checked ~ .first{
+  margin-left: -0%;
+}
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+.navegation-auto div{
+  border: 2px solid rgb(78, 32, 1);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.navegation-auto{
+  position: absolute;
+  width: 800px;
+  margin-top: 370px;
+  display: flex;
+  justify-content: center;
+}
+.navegation-auto div:not(:last-child){
+  margin-right: 50px;
+}
+#radio1:checked ~ .navegation-auto .auto1{
+  background-color: rgb(78, 32, 1);
+}
+#radio2:checked ~ .navegation-auto .auto2{
+  background-color: rgb(78, 32, 1);
+}
+#radio3:checked ~ .navegation-auto .auto3{
+  background-color: rgb(78, 32, 1);
+}
+#radio4:checked ~ .navegation-auto .auto4{
+  background-color: rgb(78, 32, 1);
 }
