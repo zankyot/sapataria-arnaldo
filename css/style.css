@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-/* body{
+body{
   font-family: 'Oswald', sans-serif;
-} */
+}
+
+/* Menu inicio */
 header{
   background-color: rgb(78, 32, 1);
   overflow: hidden;
@@ -22,14 +24,67 @@ header a:hover{
   transition: 0.5s;
   background-color: rgb(0, 0, 0);
 }
-.formulario input{
-  display: flex;
+/* Menu fim */
+
+.contatoMain h1{
+  color: rgb(78, 32, 1);
+  font-weight: bold;
+  font-size: 35px;
+  padding: 10px;
+  text-align: center;
 
 }
-.formulario textarea{
-  resize: none;
-  display: flex;
+.contatoMain h2{
+  padding-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
 }
+.formulario label, input, textarea, select{
+  display: block;
+  margin: 10px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+/* Rodapé */
+.rodape{
+  background-color: rgb(78, 32, 1);
+  padding: 10px;
+}
+.rodape address p{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 2px;
+  font-weight: lighter;
+}
+.rodape address h1{
+  color: white;
+  font-size: 19px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+/* Rodapé */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* .slider{
