@@ -7,28 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
     <title>Sapataria do Arnaldo - Contatos</title>
 </head>
 
 <body>
-    <header>
-        <nav class="logo">
+    <header class="cabeçalho">
+        <nav>
+            <div class="logo">
             <img src="img/logo.png" alt="Logo do Site" width="73px">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
         </nav>
-        <ul>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="index.html">Home</a></li>
-        </ul>
     </header>
     
-    <main>
-        <nav class="contatoMain">
+    <main class="principal">
+        <div class="contatoMain">
             <h1>Fale Conosco</h1>
             <h2>Entre em contato conosco para falar sobre orçamentos, tirar dúvidas ou fazer algum tipo de critica:</h2>
-        </nav>
-    <section>
+        </div>
+    <section class="formSection">
         <form class="formulario">
             <label for="nomeCompleto">Nome Completo:</label>
             <input type="text" id="nomeCompleto" name="nomeCompleto">
@@ -51,12 +54,14 @@
             
             <input class="submit" type="submit">
         </form>
+
+        <aside class="info">
+            <img src="img/local.jpg" alt="foto do local">
+            <p>Horário de Funcionamento</p>
+            <p></p>
+        </aside>
     </section>
     
-    <aside>
-        <img src="img/local.jpg" alt="foto do local" height="500px">
-        <p>Horário de Funcionamento</p>
-    </aside>
 </main>
     
 
